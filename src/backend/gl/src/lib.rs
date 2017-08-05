@@ -258,11 +258,11 @@ impl Device {
             debug!("- {}", *extension);
         }
         // initialize permanent states
-        if caps.srgb_color_supported {
-            unsafe {
-                gl.Enable(gl::FRAMEBUFFER_SRGB);
-            }
-        }
+        // if caps.srgb_color_supported {
+        //     unsafe {
+        //         gl.Enable(gl::FRAMEBUFFER_SRGB);
+        //     }
+        // }
         unsafe {
             gl.PixelStorei(gl::UNPACK_ALIGNMENT, 1);
 
